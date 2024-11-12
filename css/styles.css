@@ -104,13 +104,14 @@ button:hover {
 .contact-grid {
     display: grid;
     grid-template-columns: repeat(2, 150px);
-    grid-gap: 10px;
+    grid-gap: 8px;
     justify-content: center;
 }
 
 input, textarea {
     background-color: rgb(246, 216, 255);
     margin: 5px 0;
+    font-family: Arial, sans-serif;
 }
 
 label {
