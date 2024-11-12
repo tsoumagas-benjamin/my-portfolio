@@ -47,7 +47,7 @@ nav ul li a:hover {
 
 /* Styling for each section box */
 section {
-    padding: 10px 20px 0;
+    padding: 10px 20px 10px;
     margin: 20px;
     background-color: rgb(246, 216, 255);
     border-radius: 8px;
@@ -93,10 +93,6 @@ button:hover {
 }
 
 /* Styling for the form section */
-.contact-form-container {
-    padding: 0 0 20px;
-}
-
 .form {
     background-color: blueviolet;
     padding: 10px 0;
