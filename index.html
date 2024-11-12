@@ -69,7 +69,24 @@
     <!-- Contact Section -->
     <section id="contact">
         <h2>Contact Me</h2>
-        <p>In the future, this will be a contact form. For now, just leave this as a placeholder.</p>
+        <div class="contact-form-container">
+            <form class="form" id="form" action="#" method="POST">
+                <div class="contact-grid">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+            
+                    <label for="mail">Email Address:</label>
+                    <input type="email" id="mail" name="mail" required>
+                </div>
+
+                <textarea class="message" id="message" name="message" placeholder="Enter your message here!" required></textarea>
+        
+                <button class="submit" id="submit" type="submit">Submit</button>
+            </form>
+            <footer>
+                <p> Created September 25th, 2024</p>
+            </footer>    
+        </div>
     </section>
 
     <!-- Footer Section -->

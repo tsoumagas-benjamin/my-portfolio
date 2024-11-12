@@ -24,6 +24,7 @@ footer {
     bottom: 0;
 }
 
+/* Styling for navigation links */
 nav ul {
     list-style: none;
     padding: 0;
@@ -44,6 +45,7 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Styling for each section box */
 section {
     padding: 10px 20px 0;
     margin: 20px;
@@ -52,6 +54,7 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Styling for the projects section */
 h2 {
     color: #333;
     text-align: center;
@@ -71,25 +74,63 @@ h2 {
     text-align: center;
 }
 
-.project-details {
-    padding: 0 10px;
-    text-align: left;
-}
-
 .description {
     visibility: collapse;
 }
 
-.details {
+button {
+    display: block;
     padding: 5px 15px;
-    margin: 10px 0;
+    margin: auto;
     width: 35%;
     border-radius: 8px;
     border-color: rgb(104, 74, 104);
     background-color:rgb(191, 105, 214);
 }
 
-.details:hover {
+button:hover {
+    background-color: rgb(165, 56, 196);
+}
+
+/* Styling for the form section */
+.contact-form-container {
+    padding: 0 0 20px;
+}
+
+.form {
+    background-color: blueviolet;
+    padding: 10px 0;
+    margin: 0 0 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-gap: 10px;
+    justify-content: center;
+}
+
+input, textarea {
+    background-color: rgb(246, 216, 255);
+    margin: 5px 0;
+}
+
+label {
+    text-align: left;
+}
+
+.message {
+    width: 300px;
+    height: 150px;
+}
+
+.submit {
+    width: 300px;
+}
+
+.submit:hover {
     background-color: rgb(165, 56, 196);
 }
 
