@@ -76,6 +76,7 @@ h2 {
 
 .description {
     visibility: collapse;
+    padding: 10px;
 }
 
 button {
@@ -143,8 +144,12 @@ label {
         margin: 5px 0;
     }
 
-    section {
+    .section {
         padding: 10px;
         margin: 10px;
+    }
+
+    .project-grid {
+        display: block;
     }
 }
