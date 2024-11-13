@@ -11,11 +11,18 @@ const botDescription = document.getElementById("bot-description");
 const rpsDescription = document.getElementById("rps-description");
 const converterDescription = document.getElementById("converter-description");
 
+// Use DOM manipulation to select the contact form and form elements
+const contactName = document.getElementById("name");
+const mail = document.getElementById("mail");
+const message = document.getElementById("message");
+const form = document.getElementById("form");
+const submit = document.getElementById("submit");
+
 // Event listeners to perform the correct function when buttons are pressed
-// or the page is loaded/refreshed
 botDetails.addEventListener("click", loadBotDetails);
 rpsDetails.addEventListener("click", loadRpsDetails);
 converterDetails.addEventListener("click", loadConverterDetails);
+submit.addEventListener("click", submitForm);
 
 // Function to handle when details for the bot project button is clicked
 function loadBotDetails() {
@@ -47,5 +54,27 @@ function loadConverterDetails() {
     } else {
         converterDetails.innerHTML = "Project Details";
         converterDescription.style.visibility = 'collapse';
+    }
+}
+
+// Function to handle contact form submissions
+function submitForm() {
+    // Prevent submission/continuing of the form if name field is empty
+    if (contactName.value == "" || contactName.value == null){
+        contactName.setCustomValidity("Please enter your name.")
+    } else {
+        contactName.setCustomValidity("");
+    }
+    // Prevent submission/continuing of the form if email field is empty
+    if (mail.validity.typeMismatch) {
+        mail.setCustomValidity("Please enter a valid email address.");
+    } else {
+        mail.setCustomValidity("");
+    }
+    // Prevent submission/continuing of the form if message field is empty
+    if (message.value == ""){
+        message.setCustomValidity("Please enter a message.");
+    } else {
+        message.setCustomValidity("");
     }
 }
