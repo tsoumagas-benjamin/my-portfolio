@@ -78,3 +78,9 @@ function submitForm() {
         message.setCustomValidity("");
     }
 }
+
+// Animated text for the About Me section using Typed.js by Matt Boldt
+var typed = new Typed('#element', {
+    strings: ["I'm a Computer Science graduate from Ontario Tech University and continuing my education with the Computer Programming and Analysis program at Humber Polytechnics. I enjoy problem-solving and automating tasks to save time. I've worked with Python, C++, Java, JavaScript, HTML, CSS, and SQL on a variety of projects, though I enjoy Python the most."],
+    typeSpeed: 10,
+  });
