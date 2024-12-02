@@ -152,4 +152,24 @@ label {
     .project-grid {
         display: block;
     }
+
+    .contact-grid {
+        display: grid;
+        grid-template-columns: 200px;
+        grid-gap: 8px;
+        justify-content: center;
+    }
+
+    label {
+        text-align: center;
+    }
+
+    .message {
+        width: 200px;
+        height: 100px;
+    }
+    
+    .submit {
+        width: 200px;
+    }
 }
