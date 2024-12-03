@@ -37,7 +37,6 @@ utilityDetails.addEventListener("click", loadUtilityDetails);
 plannerDetails.addEventListener("click", loadPlannerDetails);
 submit.addEventListener("click", submitForm);
 
-
 // Function to handle when details for the bot project button is clicked
 function loadBotDetails() {
     if (botDetails.innerHTML === "Project Details") {
