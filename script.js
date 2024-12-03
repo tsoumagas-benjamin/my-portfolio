@@ -1,15 +1,25 @@
 // Use DOM manipulation to select project buttons
-const botDetails = document.getElementById("bot-details");
-const rpsDetails = document.getElementById("rps-details");
-const converterDetails = document.getElementById("converter-details");
+const botDetails = document.getElementById("bot");
+const rpsDetails = document.getElementById("rps");
+const converterDetails = document.getElementById("converter");
+const gamesDetails = document.getElementById("games");
+const utilityDetails = document.getElementById("utility");
+const plannerDetails = document.getElementById("planner");
 
 // Use DOM manipulation to select project description boxes and project descriptions
 const botProjectDetails = document.getElementById("bot-project-details");
 const rpsProjectDetails = document.getElementById("rps-project-details");
 const converterProjectDetails = document.getElementById("converter-project-details");
+const gamesProjectDetails = document.getElementById("games-project-details");
+const utilityProjectDetails = document.getElementById("utility-project-details");
+const plannerProjectDetails = document.getElementById("planner-project-details");
+
 const botDescription = document.getElementById("bot-description");
 const rpsDescription = document.getElementById("rps-description");
 const converterDescription = document.getElementById("converter-description");
+const gamesDescription = document.getElementById("games-description");
+const utilityDescription = document.getElementById("utility-description");
+const plannerDescription = document.getElementById("planner-description");
 
 // Use DOM manipulation to select the contact form and form elements
 const contactName = document.getElementById("name");
@@ -22,7 +32,11 @@ const submit = document.getElementById("submit");
 botDetails.addEventListener("click", loadBotDetails);
 rpsDetails.addEventListener("click", loadRpsDetails);
 converterDetails.addEventListener("click", loadConverterDetails);
+gamesDetails.addEventListener("click", loadGamesDetails);
+utilityDetails.addEventListener("click", loadUtilityDetails);
+plannerDetails.addEventListener("click", loadPlannerDetails);
 submit.addEventListener("click", submitForm);
+
 
 // Function to handle when details for the bot project button is clicked
 function loadBotDetails() {
@@ -54,6 +68,39 @@ function loadConverterDetails() {
     } else {
         converterDetails.innerHTML = "Project Details";
         converterDescription.style.visibility = 'collapse';
+    }
+}
+
+// Function to handle when details for the games project button is clicked
+function loadGamesDetails() {
+    if (gamesDetails.innerHTML === "Project Details") {
+        gamesDetails.innerHTML = "Hide Details";
+        gamesDescription.style.visibility = 'visible';
+    } else {
+        gamesDetails.innerHTML = "Project Details";
+        gamesDescription.style.visibility = 'collapse';
+    }
+}
+
+// Function to handle when details for the utility project button is clicked
+function loadUtilityDetails() {
+    if (utilityDetails.innerHTML === "Project Details") {
+        utilityDetails.innerHTML = "Hide Details";
+        utilityDescription.style.visibility = 'visible';
+    } else {
+        utilityDetails.innerHTML = "Project Details";
+        utilityDescription.style.visibility = 'collapse';
+    }
+}
+
+// Function to handle when details for the planner project button is clicked
+function loadPlannerDetails() {
+    if (plannerDetails.innerHTML === "Project Details") {
+        plannerDetails.innerHTML = "Hide Details";
+        plannerDescription.style.visibility = 'visible';
+    } else {
+        plannerDetails.innerHTML = "Project Details";
+        plannerDescription.style.visibility = 'collapse';
     }
 }
 
